@@ -1,0 +1,50 @@
+﻿@model Product
+
+<h1 style="color:red;">Get Product</h1>
+
+<form method="post" asp-action="GetProductViaName">
+    <div class="form-group" style="font-size:25px;">
+        <label for="productName">Product Name:</label>
+        <input type="text" name="name" id="productName" class="form-control" style="font-size:20px;" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary" style="font-size:20px;">Get Product Details</button>
+</form>
+
+@if (Model != null)
+{
+    <h1 style="color:green;">Found Product:</h1>
+    <hr />
+    <div class="col-md-4 mb-3" style="font-size:25px;">
+        <div class="card">
+            <div class="card-body">
+                <p><b>Name: </b> <span style="color:orangered; font-weight:700; font-size:25px;" class="card-title">@Model.Name</span></p>
+
+                <p><b>Price:</b>  <span class="card-text">@Model.Price</span></p>
+            </div>
+        </div>
+    </div>
+}
+else if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <p>@ViewBag.ErrorMessage</p>
+}
+
+<div class="mt-4">
+    <hr />
+    <h2 style="color:goldenrod;">All Products</h2>
+    <div class="row">
+        @foreach (var product in TempData["AllProducts"] as List<Product>)
+        {
+            <div class="col-md-4 mb-3" style="font-size:25px;">
+                <div class="card">
+                    <div class="card-body">
+                        <p><b>Name: </b> <span style="color:orangered; font-weight:700; font-size:25px;" class="card-title">@product.Name</span></p>
+
+                        <p><b>Price:</b>  <span class="card-text">@product.Price</span></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
