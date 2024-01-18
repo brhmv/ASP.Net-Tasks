@@ -1,0 +1,85 @@
+﻿@model Product
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<body>
+
+    <h1 style="color:red;">Get Product</h1>
+
+    <form method="post" asp-action="GetProductViaName">
+        <div class="form-group" style="font-size:25px;">
+            <label for="productName">Product Name:</label>
+            <input type="text" name="name" id="productName" class="form-control" style="font-size:20px;" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary" style="font-size:20px;">Get Product Details</button>
+    </form>
+
+    @if (Model != null)
+    {
+        <h1 style="color:green;">Found Product:</h1>
+        <hr />
+        <div class="col-md-4 mb-3" style="font-size:25px;">
+            <div class="card">
+                <div class="card-body">
+
+
+                    <img src="~/images/@Model.ImageUrl" alt="Product Image" class="product-image" />
+
+                    <p><b>Name: </b><span class="product-name">@Model.Name</span></p>
+
+                    <p><b>Price:</b> <span class="product-price">@Model.Price</span></p>
+
+                    <p><b>Description:</b> <span class="product-description">@Model.Description</span></p>
+
+                    <p><b>Category:</b> <span class="product-category">@Model.Category?.Name</span></p>
+
+                </div>
+            </div>
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <p>@ViewBag.ErrorMessage</p>
+    }
+
+    <div class="mt-4">
+        <hr />
+        <div class="row">
+            @if (ViewBag.Products is List<Product> productList && productList.Count != 0)
+            {
+                <h2 style="color:goldenrod;">All Products</h2>
+                @foreach (var product in productList)
+                {
+                    <div class="col-md-4 mb-3" style="font-size:25px;">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <img src="~/images/@product.ImageUrl" alt="Product Image" class="product-image" />
+
+                                <p><b>Name: </b><span class="product-name">@product.Name</span></p>
+
+                                <p><b>Price:</b> <span class="product-price">@product.Price</span></p>
+
+                                <p><b>Description:</b> <span class="product-description">@product.Description</span></p>
+
+                                <p><b>Category:</b> <span class="product-category">@product.Category?.Name</span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+</body>
+</html>

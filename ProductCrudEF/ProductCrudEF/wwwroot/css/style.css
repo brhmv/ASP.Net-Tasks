@@ -1,0 +1,34 @@
+﻿
+.header-title {
+    color: red;
+}
+
+.card {
+    width: 18vw;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height:200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-name,
+.product-price,
+.product-description,
+.product-category {
+    color: orangered;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.product-link {
+    color: #007bff;
+    margin-right: 10px;
+}
