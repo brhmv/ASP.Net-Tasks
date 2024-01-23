@@ -3,19 +3,20 @@ using ProductCrudEF.Models;
 using ProductCrudEF.Data;
 using ProductCrudEF.Models.ViewModels;
 using ProductCrudEF.Helpers;
+using AutoMapper;
 
 namespace ProductCRUD.Controllers
 {
     public class ProductController : Controller
     {
         private readonly AppDbContext _appDbContext;
+        private readonly IMapper _mapper;
 
-        public ProductController(AppDbContext appDbContext)
+        public ProductController(AppDbContext appDbContext, IMapper mapper)
         {
             _appDbContext = appDbContext;
+            _mapper = mapper;
         }
-
-
 
 
         #region GetProducts
@@ -51,14 +52,8 @@ namespace ProductCRUD.Controllers
                     return BadRequest("Invalid product data.");
                 }
 
-                var newProduct = new Product
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    CategoryId = product.CategoryId,
-                    Price = product.Price,
-                    Description = product.Description,
-                    Name = product.Name,
-                };
+                var newProduct = _mapper.Map<Product>(product);
+                newProduct.Id = Guid.NewGuid().ToString();
 
                 if (product.ImageFile != null && product.ImageFile.Length > 0)
                 {
@@ -176,7 +171,6 @@ namespace ProductCRUD.Controllers
                 ViewBag.ErrorMessage = "Product not found.";
             }
 
-            //TempData["AllProducts"] = _appDbContext.Products;
             ViewBag.Products = _appDbContext.Products;
 
             await _appDbContext.SaveChangesAsync();
