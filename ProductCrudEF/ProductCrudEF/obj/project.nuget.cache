@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/l2EFSfOIDM/nh6TZwpT4FIDcck6MDNCV5x0hfnFrL8rcLKBaLHQQsf5W4zxvyFR6b70O8qDGyBeIoLb2YJb7w==",
+  "dgSpecHash": "EOi4P8Eu7fysAqxiyqSpLysTC+vzyOAmXNGHffDoUVRI7fnC9bmcmmjKG0LHHNqeYbr0FDcHgALTmerrjL75kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\ProductCrudEF\\ProductCrudEF\\ProductCrudEF.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Tasks\\ProductCrudEF\\ProductCrudEF\\ProductCrudEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

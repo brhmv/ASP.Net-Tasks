@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TodoWebService",
+    "\\TodoWebService\\Models",
+    "\\TodoWebService\\Models\\Entities",
+    "\\TodoWebService\\Services",
+    "\\TodoWebService\\Services\\Todo"
+  ],
+  "SelectedNode": "\\TodoWebService\\Models\\Entities\\TodoItem.cs",
+  "PreviewInSolutionExplorer": false
+}

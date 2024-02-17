@@ -2958,11 +2958,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProductCrudEF\\ProductCrudEF\\ProductCrudEF.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Tasks\\ProductCrudEF\\ProductCrudEF\\ProductCrudEF.csproj",
       "projectName": "ProductCrudEF",
-      "projectPath": "C:\\Users\\user\\source\\repos\\ProductCrudEF\\ProductCrudEF\\ProductCrudEF.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Tasks\\ProductCrudEF\\ProductCrudEF\\ProductCrudEF.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\ProductCrudEF\\ProductCrudEF\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Tasks\\ProductCrudEF\\ProductCrudEF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

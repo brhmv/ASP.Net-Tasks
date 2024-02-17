@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj": {}
+    "C:\\Users\\user\\Desktop\\Tasks\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj": {
+    "C:\\Users\\user\\Desktop\\Tasks\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Tasks\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj",
         "projectName": "ProductCRUD",
-        "projectPath": "C:\\Users\\user\\source\\repos\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Tasks\\ProductCRUD\\ProductCRUD\\ProductCRUD.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\ProductCRUD\\ProductCRUD\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Tasks\\ProductCRUD\\ProductCRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
